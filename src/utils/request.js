@@ -5,7 +5,7 @@
         withCredentials:true
     })
 
-    //请求拦截器
+    //
     server.interceptors.request.use((config)=>{
         if(config.method == 'get'){
             config.params = {...config.data};
