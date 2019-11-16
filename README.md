@@ -10,4 +10,6 @@
 
 #环境配置
 >vue-cli@3
-vue.config.js
+>vue.config.js
+>
+>越宽广佛功德鲁大师ui哦了
