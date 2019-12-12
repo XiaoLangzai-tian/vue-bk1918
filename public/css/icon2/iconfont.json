@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "47392858",
+      "name": "返回按钮",
+      "font_class": "yiliaohangyedeICON-",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    }
+  ]
+}

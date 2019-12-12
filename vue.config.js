@@ -3,9 +3,10 @@
     module.exports={
         // 跨域
         devServer:{
+            open:true,
             proxy:{
                 '/api':{
-                    taeget:"http://39.97.33.178",
+                    target:"http://39.97.33.178",
                     changeOrigin:true
                 }
             }

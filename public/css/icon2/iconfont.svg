@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="yiliaohangyedeICON-" unicode="&#58930;" d="M727.28171457-72.45419457000003l78.06065778 69.77561284a1.16508445 1.16508445 0 0 1 0 1.68289976L375.94402765 382.57600790000004a1.16508445 1.16508445 0 0 0 0 1.68289975l429.3983447 383.70114371a1.16508445 1.16508445 0 0 1 0 1.68289975l-78.06065778 69.77561284a1.16508445 1.16508445 0 0 1-1.55344593 0L214.90346667 385.94180741a1.16508445 1.16508445 0 0 1 0-1.68289976 1.16508445 1.16508445 0 0 0 0-1.68289975 1.16508445 1.16508445 0 0 1 0-1.68289975l510.82480197-453.34730272a1.16508445 1.16508445 0 0 1 1.55344593 0z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

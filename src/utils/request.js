@@ -1,7 +1,8 @@
+    //对axios的二次封装
     import axios from "axios"
     const server = axios.create({
         timeout:5000,
-        // baseUrl:""
+        // baseUrl:""//工作中用的上
         withCredentials:true
     })
 
@@ -10,8 +11,9 @@
         if(config.method == 'get'){
             config.params = {...config.data};
         }
-        config.headers["content-type"] = "applicention/json";
-        config.headers["token"] = "";
+        // config.headers["content-type"] = "applicention/json";
+        // config.headers["token"] = "";
+        return config;
     },(err)=>{
         return Promise.reject(err);
     })
@@ -24,4 +26,4 @@
         return Promise.reject(err)
     })
 
-    export default server
+    export default server;
