@@ -26,5 +26,7 @@
       right:0;
       padding-bottom:48.5px;
       padding-top:50.5px;
+      display:flex;
+      flex-direction: column;
     }
   </style>

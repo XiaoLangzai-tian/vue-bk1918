@@ -18,7 +18,7 @@
             </form>
             <div class="mui-content-padded">
                 <button type="button" class="mui-btn mui-btn-block mui-btn-primary">登录</button>
-                <div class="link-area"><a id='reg'>注册账号</a> <span class="spliter">|</span> <a id='forgetPassword'>忘记密码</a>
+                <div class="link-area"><a id='reg'>注册账号</a> <span class="spliter"> </span> <a id='forgetPassword'>忘记密码</a>
                 </div>
             </div>
             <div class="mui-content-padded oauth-area">
@@ -45,7 +45,7 @@ export default {
         background:#fff;
     }
     .mui-input-clear{
-        font-size:.28rs em;
+        font-size:.15rem;
     }
     .mui-btn-blue, .mui-btn-primary, input[type=submit]{
         background:#e54847;
@@ -53,7 +53,10 @@ export default {
         border:0;
     }
     .link-area a{
-        color:#666;
+        font-family: PingFangSC-Regular;
+        font-size: 0.11rem;
+        color: #FE8C00;
+
     }
     .area {
         margin: 20px auto 0px auto;
@@ -128,10 +131,12 @@ export default {
     }
     .copyright {
         text-align: center;
+        font-size:.12rem;
     }
     .copyright a {
         color: #df2d2d;
         text-decoration: none;
         outline: 0;
+        font-size:.12rem;
     }
 </style>

@@ -24,7 +24,7 @@
                     "@router":path.join(__dirname,"./src/touter"),
                     "@store":path.join(__dirname,"./src/store"),
                     "@utils":path.join(__dirname,"./src/utils"),
-                    
+                    "@assets":path.join(__dirname,"./src/assets")
                 }
             }
         }

@@ -13,7 +13,16 @@ input{outline:none;border:0;}
 html,body{
     height:100%;
     overflow:hidden;
+    font-size:26.67vw;
 }
 #app{
     height:100%;
+}
+.clear{
+    content: "";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
 }
