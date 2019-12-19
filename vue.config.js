@@ -5,7 +5,11 @@
         devServer:{
             open:true,
             proxy:{
-                '/api':{
+                '/ajax':{
+                    target:"http://m.maoyan.com",
+                    changeOrigin:true
+                },
+                "/api":{
                     target:"http://39.97.33.178",
                     changeOrigin:true
                 }
@@ -15,7 +19,6 @@
         configureWebpack:{
             resolve:{
                 alias:{
-                    //@代表./src
                     "@":path.join(__dirname,"./src"),
                     "@api":path.join(__dirname,"./src/api"),
                     "@common":path.join(__dirname,"./src/common"),

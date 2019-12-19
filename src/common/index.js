@@ -1,8 +1,10 @@
 import Vue from "vue"
 import Header from './header'
+import Bscroll from './bscroll'
 
 let componentsMap = [
-    Header
+    Header,
+    Bscroll
 ];
 
 //全局组件的注册

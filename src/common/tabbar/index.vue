@@ -64,6 +64,7 @@
         }
         .foot .router-link-active{
             color: #f03d37;
+            border-bottom:none;
         }
         .foot .foot_con i{
             font-size:25px;

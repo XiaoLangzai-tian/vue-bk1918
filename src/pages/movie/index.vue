@@ -7,8 +7,8 @@
                 <div class="btn-open-app">立即打开</div>
             </div>
             <div class="add">
-                <router-link tag="div" to="/city" class="addsel">
-                    <span>北京</span>
+                <router-link tag="div" :to="'/city?path='+this.$route.path" class="addsel">
+                    <span>{{this.$store.state.city.nm}}</span>
                     <i class="iconfont">&#xe642;</i>
                 </router-link>
                 <div class="addMiddle">
@@ -19,9 +19,9 @@
                     <i class="iconfont">&#xe63d;</i>
                 </router-link>
             </div>
-            <router-view></router-view>
-
-
+            <keep-alive>
+                <router-view></router-view>
+            </keep-alive>
         </div>
     </template>
     <script>
@@ -106,12 +106,15 @@
             height:20px;
             padding-left:15px;  
             display:flex;
-            align-items: center;;
+            align-items: center;
         }
         .add .addsel span{
             display: inline-block;
             width:30px;
             height:20px;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
             font-size: 15px;
             color: #666;
         }
@@ -148,6 +151,7 @@
         .add .addRight i{
             width:20px;
             height:20px;
+            line-height:20px;
             display:inline-block;
             font-size:20px;
             color: #ef4238;

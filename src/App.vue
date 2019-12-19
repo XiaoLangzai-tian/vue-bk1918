@@ -1,6 +1,6 @@
   <template>
     <div id="app">
-      <Tabbar v-if="$route.meta.flg"/>
+        <Tabbar v-if="$route.meta.flg"/>
       <router-view></router-view>
     </div>
   </template>
