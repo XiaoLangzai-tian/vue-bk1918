@@ -1,7 +1,7 @@
 <template>
   <kemeng-scroll ref="scroll" >
     <div class="hot">
-      <main>
+      <main class="main">
         <router-link tag="div" class="case" :to="'/detail/'+item.id+'/'+item.nm" v-for="(item,index) in list " :key="index">
           <div class="pic">
             <img :src="item.img | toImg('128.180')" alt />
@@ -125,12 +125,12 @@ export default {
   width: 0.45rem;
   height: 0.4rem;
 }
-main {
+.main {
   height: 100%;
   overflow-y: auto;
   flex: 1;
 }
-main::-webkit-scrollbar {
+.main::-webkit-scrollbar {
   display: none;
 }
 .case {

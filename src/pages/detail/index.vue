@@ -5,21 +5,21 @@
     </div>
 </template>
 <script>
-import {detailApi} from '@api/movie.js'
+import {detailMovieListApi} from '@api/movie.js'
 export default {
     name:'detail',
-    props:["id","nm"],
+    props:["id",'nm','img'],
     data(){
         return {
             detail :[]
         }
     },
     created(){
-        this.getDetailData();
+        this.getDetailData(this.id);
     },
     methods:{
-        async getDetailData(){
-            let data = await detailApi();
+        async getDetailData(id){
+            let data = await detailMovieListApi(id);
             console.log(data)
         }
     }

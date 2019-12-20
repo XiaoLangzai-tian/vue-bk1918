@@ -4,14 +4,20 @@
         // 跨域
         devServer:{
             open:true,
+
             proxy:{
                 '/ajax':{
                     target:"http://m.maoyan.com",
                     changeOrigin:true
+                    // http://m.maoyan.com/ajax/cinemaList
                 },
-                "/api":{
+                "/kemeng":{
                     target:"http://39.97.33.178",
-                    changeOrigin:true
+                    changeOrigin:true,
+                    pathRewrite:{
+                        //重写路径
+                        '^/kemeng':''
+                    }
                 }
             }
         },

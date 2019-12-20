@@ -39,16 +39,43 @@ export const movieCommingBottomApi = (cityId)=> http({
 
 /**
  * @detail
- * 详情页
+ * params:movieId
+ * 详情页：接口
  * 
  */
- 
-// let _brl = '/ajax/cinemaList?day=2019-12-18&offset=0&limit=20&districtId=-1&lineId=-1&hallType=-1&brandId=-1&serviceId=-1&areaId=-1&stationId=-1&item=&updateShowDay=true&reqId=1576678927069&cityId=1&optimus_uuid=A3752B50FF1211E9B696A90282C60F25DF81DF9776F94EA997502A364A20EBC6&optimus_risk_level=71&optimus_code=10'
-export const detailApi = ()=>http({
+export  const detailMovieListApi =(movieId)=>http({
+     method:'get',
+     url:"/kemeng/api/detailmovie",
+     data:{
+         movieId
+     }
+ })
+ /**
+ * @detail
+ * params:movieId
+ * 搜索：接口
+ * 
+ */
+//    /api/searchList?cityId=10$kw=a
+export const searchMovieApi = (cityId,kw)=>http({
+    method:'get',
+    url:'/kemeng/api/searchList',
+    data:{
+        cityId,
+        kw
+    }
+})
+
+
+ /**
+  * http://m.maoyan.com/ajax/cinemaList?day=2019-12-19&offset=0&limit=20&districtId=-1&lineId=-1&hallType=-1&brandId=-1&serviceId=-1&areaId=-1&stationId=-1&item=&updateShowDay=true&reqId=1576758434755&cityId=1&optimus_uuid=A3752B50FF1211E9B696A90282C60F25DF81DF9776F94EA997502A364A20EBC6&optimus_risk_level=71&optimus_code=10
+  * cinema
+ */
+export const cinemaListApi = ()=>http({
     mothod:'get',
     url:'/ajax/cinemaList',
     data:{
-        day: 2019-12-18,
+        day: 2019-12-19,
         offset: 0,
         limit: 20,
         districtId: -1,
@@ -60,10 +87,10 @@ export const detailApi = ()=>http({
         stationId: -1,
         item: '',
         updateShowDay: true,
-        reqId: 1576678927069,
+        reqId: 1576758434755,
         cityId: 1,
         optimus_uuid: 'A3752B50FF1211E9B696A90282C60F25DF81DF9776F94EA997502A364A20EBC6',
         optimus_risk_level: 71,
-        optimus_code: 10
+        optimus_code: 10,
     }
 })

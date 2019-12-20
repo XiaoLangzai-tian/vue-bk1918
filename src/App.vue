@@ -1,7 +1,9 @@
   <template>
     <div id="app">
         <Tabbar v-if="$route.meta.flg"/>
-      <router-view></router-view>
+      <keep-alive exclude="Detail,search">
+        <router-view></router-view>
+      </keep-alive>
     </div>
   </template>
   <script>

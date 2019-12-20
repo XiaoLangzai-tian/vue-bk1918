@@ -40,7 +40,7 @@
     </script>
     <style>
         .foot{
-            z-index:2;
+            z-index:999;
             position: fixed;
             bottom: 0;
             width: 100%;

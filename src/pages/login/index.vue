@@ -1,6 +1,10 @@
 <template>
     <div class="page"> 
         <Header title="猫眼电影" icon/>
+        <div class="change">
+            <div>美团账号登录</div>
+            <div>手机验证码登录</div>
+        </div>
         <div class="mui-content">
             <form class="mui-input-group">
                 <div class="mui-input-row">
@@ -27,6 +31,7 @@
                 <span class="copyright">© 猫眼电影 客服电话：<a data-evt="ft/hotline" href="tel:4006705335">400-670-5335</a></span>
             </div>
         </div>
+        <Button></Button>
     </div> 
 </template>
 <script>
@@ -35,6 +40,25 @@ export default {
 }
 </script>
 <style>
+    .change{
+        width:100%;
+        height:0.3rem;
+        position:fixed;
+        left:0;
+        top:50px;
+        display:flex;
+    }
+    .change div{
+        flex:1;
+        font-size:13px;
+        color: #222222;
+        line-height:30px;
+        text-align:center;
+        border-bottom:2px solid #f5f5f5;
+    }
+    .change div:hover{
+        border-bottom: .02rem solid #FFC300;
+    }
     .back{
         width:30px;
         height:100%;
@@ -56,7 +80,6 @@ export default {
         font-family: PingFangSC-Regular;
         font-size: 0.11rem;
         color: #FE8C00;
-
     }
     .area {
         margin: 20px auto 0px auto;
@@ -67,7 +90,7 @@ export default {
     }
     
     .mui-input-group:first-child {
-        margin-top: 45px;
+        margin-top: 30px;
     }
     .mui-input-row label~input,
     .mui-input-row label~select,

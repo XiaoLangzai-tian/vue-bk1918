@@ -69,7 +69,7 @@ let mutations = {
                 return -1;
             }
         })
-        console.log(cityList)
+        // console.log(cityList)
         state.hotCity = hotCity;
         state.cityList = cityList;
         sessionStorage.setItem('hotCity',JSON.stringify(hotCity));

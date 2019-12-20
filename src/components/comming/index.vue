@@ -3,19 +3,19 @@
         <div class="nav_box">
             <p class="title">近期最受期待</p>
             <div class="movieNavList">
-                <div class="littleMovie"  v-for="(item,index) in comingList" :key="index">
+                <router-link tag="div" :to="'/detail/'+item.id+'/'+item.nm" class="littleMovie"  v-for="(item,index) in comingList" :key="index">
                     <div class="pic">
                         <img :src="item.img | toImg('128.180')" alt="">
                         <span class="many"><i>{{item.wish}}</i>人想看</span>
                     </div>
                     <h5 class="name">{{item.nm}}</h5>
                     <p class="date">{{item.comingTitle}}</p>
-                </div>
+                </router-link>
             </div>
         </div>
         <div class="marCla"></div>
         <div class="exMovie">
-            <div class="exMovieList" v-for="(item,index) in bottomList" :key="index">
+            <router-link  tag="div" :to="'/detail/'+item.id+'/'+item.nm" class="exMovieList" v-for="(item,index) in bottomList" :key="index">
                 <p class="group-date" v-if="showFlg(item)">{{item.comingTitle}}</p>
                 <div class="content" >
                     <div class="picImg">
@@ -32,7 +32,7 @@
                         <div :class="item.showst === 1 ? ' wantSee Yellow ' : ' wantSee Blue ' ">{{item.showst === 1 ? '想看' : '预售'}}</div>
                     </div>
                 </div>
-            </div>
+            </router-link>
         </div>
     </div>
 </template>
